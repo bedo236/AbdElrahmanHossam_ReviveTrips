@@ -1,0 +1,306 @@
+/* Universal Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    color: #333;
+    background: url('wallhaven-0jklw4.jpg') no-repeat center center/cover;
+}
+
+/* Header */
+.header {
+    background: rgba(0, 64, 128, 0.7);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: #004080; */
+    padding: 15px 30px;
+    color: white;
+}
+
+.logo img {
+    width: 40px;
+    border-radius: 50%;
+}
+
+.navbar a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+    padding: 40px 20px;
+}
+
+/* .hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+} */
+
+.hero h1 {
+    /* font-size: 3em;
+    margin-bottom: 10px; */
+
+    font-size: 2.5em;
+    color: #032142;
+    /* margin-bottom: 30px; */
+}
+
+.hero p {
+    font-size: 1.2em;
+    color: #032142;
+}
+
+/* Section */
+.section {
+    max-width: 80%;
+    margin: 40px auto;
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background: rgba(225, 225, 225, 0.2);
+}
+
+.section h2, .aboutUs_section h2{
+    font-size: 2.5em;
+    color: #004080;
+    margin-bottom: 20px;
+}
+
+.section p, .aboutUs_section p{
+    font-size: 1.1em;
+    margin-bottom: 40px;
+}
+
+/* Service Cards */
+.services-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    /* background-color: white; */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(33.333% - 20px); /* Flexible layout for 3 cards per row */
+    max-width: 300px;
+    padding: 20px;
+    text-align: center;
+    background: rgba(225, 225, 225, 0.7);
+}
+
+.card h3 {
+    color: #004080;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+.footer {
+    /* background-color: #004080; */
+    color: white;
+    text-align: center;
+    padding: 15px 20px;
+    font-size: 0.9em;
+    background: rgba(0, 64, 128, 0.7);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar a {
+        margin: 10px 0;
+    }
+
+    .footer {
+        font-size: 0.8em;
+    }
+
+    .services-cards .card {
+        flex: 1 1 100%; /* Stack cards on small screens */
+    }
+}
+
+
+/* Founders Section */
+.founders-section {
+    max-width: 80%;
+    margin: 80px auto;
+    text-align: center;
+    color: #333;
+
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background: rgba(225, 225, 225, 0.2);
+}
+
+.founders-section h1 {
+    font-size: 2.5em;
+    color: #004080;
+    margin-bottom: 30px;
+}
+
+.founders-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    
+    /* max-width: 90%;
+    margin: 40px auto;
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background: rgba(225, 225, 225, 0.2); */
+}
+
+.founder-card {
+    background: rgba(225, 225, 225, 0.7);
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    width: calc(25% - 20px); /* Four cards per row, accounting for gap */
+    max-width: 400px;
+    text-align: center;
+    padding: 20px;
+}
+
+.founder-card img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.founder-card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+
+.founder-card h3 {
+    font-size: 1.2em;
+    color: #004080;
+    margin-bottom: 5px;
+}
+
+.founder-card p {
+    font-size: 1em;
+    color: #555;
+}
+
+/* Responsive Design for Founders Section */
+@media (max-width: 768px) {
+    .founders-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .founder-card {
+        width: 90%;
+    }
+}
+
+
+/* About Us Section */
+#founders {
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* .founder-card img {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 15px;
+} */
+
+/* Contact Form */
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: rgba(225, 225, 225, 0.7);
+}
+
+.contact-form label {
+    font-size: 1em;
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background-color: #004080;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #003060;
+}
+
+.aboutUs_section ol  {
+    margin-bottom: 20px;
+    margin-left: 20px;
+    text-align: justify;
+}
+
+
+.aboutUs_section {
+    max-width: 80%;
+    margin: 40px auto;
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background: rgba(225, 225, 225, 0.5);
+}
