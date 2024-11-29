@@ -17,6 +17,9 @@
             <a href="contact.html">Contact</a>
             <a href="founders.html">Pioneers</a>
         </nav>
+        <div class="menu-toggle" onclick="toggleMenu()">
+            &#9776; <!-- Hamburger Icon -->
+        </div>
     </header>
 
     <section class="section">
@@ -40,4 +43,10 @@
         <p>&copy; 2024 Revive Trips. All Rights Reserved.</p>
     </footer>
 </body>
+<script>
+    function toggleMenu() {
+        const navbar = document.querySelector('.navbar');
+        navbar.classList.toggle('show');
+    }
+</script>
 </html>
