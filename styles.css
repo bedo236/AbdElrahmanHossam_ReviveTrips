@@ -304,3 +304,55 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     background: rgba(225, 225, 225, 0.5);
 }
+
+@media (max-width: 768px) {
+    .founders-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .founder-card {
+        width: 100%;
+    }
+}
+
+/* Default Navigation Bar */
+.navbar {
+    display: flex;
+    gap: 20px;
+}
+
+.menu-toggle {
+    display: none; /* Hidden by default */
+    font-size: 1.5em;
+    cursor: pointer;
+    color: white;
+}
+
+/* Responsive Navigation Bar */
+@media (max-width: 768px) {
+    .navbar {
+        display: none; /* Hidden by default on small screens */
+        flex-direction: column;
+        align-items: center;
+        background: rgba(0, 64, 128, 0.9);
+        position: absolute;
+        top: 60px; /* Adjust to header height */
+        width: 100%;
+        left: 0;
+        padding: 10px 0;
+        z-index: 100;
+    }
+
+    .navbar a {
+        margin: 10px 0;
+    }
+
+    .menu-toggle {
+        display: block; /* Show toggle button */
+    }
+
+    .navbar.show {
+        display: flex; /* Show the menu when active */
+    }
+}
